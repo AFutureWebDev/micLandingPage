@@ -4,12 +4,46 @@ body {
     background-color: black;
 }
 
+main{
+grid-template-areas: 
+"nav nav nav nav"
+". section section ."
+"footer footer footer footer";
+}
+
+/* NAVIGATION BAR */
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #069CC0;
+}
+
+/* links */
+nav a {
+    padding: 10px;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Abel', sans-serif;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.842);
+    color: black;
+    border-radius: 10px;
+}
+
+/* MIC logo */
 #logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     animation: fill 0.5s ease forwards 3s;
+    padding: 10px;
 }
 
 #logo path {
@@ -41,11 +75,152 @@ body {
     }
 }
 
-@keyframes fill {
+/* @keyframes fill {
     from {
         fill: transparent;
     }
     to {
        fill: #069CC0;
     }
+} */
+
+/*button*/
+
+#container {
+    height: 80px;
+    width: 250px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainButton {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    font-family: 'Abel', sans-serif;
+    border-radius: 10px;
+}
+
+#mainButton:before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    border: 1px solid transparent;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#mainButton:after{
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    border: 1px solid transparent;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#mainButton:hover:before {
+    height: 50px;
+    width: 200px;
+    border: 5px solid #069CC0;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 10px;
+    transition: height 0.3s linear,
+                width 0.3s linear 0.3s;
+}
+
+#mainButton:hover:after {
+    height: 50px;
+    width: 200px;
+    border: 4px solid #069CC0;
+    border-left: none;
+    border-top: none;
+    border-radius: 10px;
+    transition: height 0.3s linear,
+                width 0.3s linear 0.3s;
+}
+
+/* SECTION */
+
+#sickbayStart {
+    grid-area: section;
+    height: 300px;
+    background: linear-gradient(#069CC0, black);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#headerContainer {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#headerContainer p {
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h3 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+h3~h3 {
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+#sickbay {
+    height: 300px;
+    width: 350px;
+    padding: 50px 50px 50px 50px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+#platformContainer {
+    margin-top: 75px;
+}
+
+#platformContainer h2 {
+    color: white;
+    width: auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#platformContainer p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    width: auto;
+    margin-right: 20px;
+}
+
+footer {
+    grid-area: footer;
 }

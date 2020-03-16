@@ -4,16 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIC Landing Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <svg id="logo" width="252" height="150" viewBox="0 0 252 103" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M102.544 2.352V102H89.4404V27.696L56.3205 102H47.1045L13.8405 27.552V102H0.73645V2.352H14.8484L51.7125 84.72L88.5765 2.352H102.544Z"/>
+    <main>
+        <!-- Navigation Bar -->
+        <nav>
+            <svg id="logo" width="150" height="80" viewBox="0 0 252 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M102.544 2.352V102H89.4404V27.696L56.3205 102H47.1045L13.8405 27.552V102H0.73645V2.352H14.8484L51.7125 84.72L88.5765 2.352H102.544Z"/>
 
-        <path d="M137.872 1.632V102H124.768V1.632H137.872Z"/>
+                <path d="M137.872 1.632V102H124.768V1.632H137.872Z"/>
 
-        <path d="M155.309 51.744C155.309 41.952 157.517 33.168 161.933 25.392C166.349 17.52 172.349 11.376 179.933 6.96C187.613 2.544 196.109 0.335999 205.421 0.335999C216.365 0.335999 225.917 2.976 234.077 8.256C242.237 13.536 248.189 21.024 251.933 30.72H236.237C233.453 24.672 229.421 20.016 224.141 16.752C218.957 13.488 212.717 11.856 205.421 11.856C198.413 11.856 192.125 13.488 186.557 16.752C180.989 20.016 176.621 24.672 173.453 30.72C170.285 36.672 168.701 43.68 168.701 51.744C168.701 59.712 170.285 66.72 173.453 72.768C176.621 78.72 180.989 83.328 186.557 86.592C192.125 89.856 198.413 91.488 205.421 91.488C212.717 91.488 218.957 89.904 224.141 86.736C229.421 83.472 233.453 78.816 236.237 72.768H251.933C248.189 82.368 242.237 89.808 234.077 95.088C225.917 100.272 216.365 102.864 205.421 102.864C196.109 102.864 187.613 100.704 179.933 96.384C172.349 91.968 166.349 85.872 161.933 78.096C157.517 70.32 155.309 61.536 155.309 51.744Z"/>
-    </svg>
+                <path d="M155.309 51.744C155.309 41.952 157.517 33.168 161.933 25.392C166.349 17.52 172.349 11.376 179.933 6.96C187.613 2.544 196.109 0.335999 205.421 0.335999C216.365 0.335999 225.917 2.976 234.077 8.256C242.237 13.536 248.189 21.024 251.933 30.72H236.237C233.453 24.672 229.421 20.016 224.141 16.752C218.957 13.488 212.717 11.856 205.421 11.856C198.413 11.856 192.125 13.488 186.557 16.752C180.989 20.016 176.621 24.672 173.453 30.72C170.285 36.672 168.701 43.68 168.701 51.744C168.701 59.712 170.285 66.72 173.453 72.768C176.621 78.72 180.989 83.328 186.557 86.592C192.125 89.856 198.413 91.488 205.421 91.488C212.717 91.488 218.957 89.904 224.141 86.736C229.421 83.472 233.453 78.816 236.237 72.768H251.933C248.189 82.368 242.237 89.808 234.077 95.088C225.917 100.272 216.365 102.864 205.421 102.864C196.109 102.864 187.613 100.704 179.933 96.384C172.349 91.968 166.349 85.872 161.933 78.096C157.517 70.32 155.309 61.536 155.309 51.744Z"/>
+            </svg> 
+
+            <a href="">Our Company</a>
+            <a href="">Who We Help</a>
+            <a href="">Problems We Solve</a>
+            <a href="">Our Solution</a>
+            <a href="">Blog</a>
+
+            <div id="container">
+                <button id="mainButton" onclick="learnMore()">Learn More!</button>
+            </div>
+        </nav>
+        <!-- Section -->
+        <section id = "sickbayStart" >
+            <div id="headerContainer">
+                <h3>One platform, </h3>
+                <h3>many apps</h3>
+                <p>For data driven medicine and patient-centered care</p>
+            </div>
+            <img id="sickbay" src="/images/sickbay.png" alt="Sickbay Software Image">
+        </section>
+
+        <section>
+            <div id="platformContainer">
+                <h2>OUR PLATFORM</h2>
+                <p>Unlock your data for remote monitoring, waveform integration, predictive medicine, risk stratification, and more with SickbayTM – a single, FDA-cleared software-based monitoring and analytics platform</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <img src="./images/mic.png" alt="Medical Informatics Corp">
+        </footer>
+    </main>
         
     <script src="index.js"></script>
 </body>
