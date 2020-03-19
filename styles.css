@@ -8,6 +8,7 @@ main{
 grid-template-areas: 
 "nav nav nav nav"
 ". section section ."
+"barChart barChart barChart barChart"
 "footer footer footer footer";
 }
 
@@ -157,7 +158,7 @@ nav a:hover {
                 width 0.3s linear 0.3s;
 }
 
-/* SECTION */
+/* SICKBAY SECTION */
 
 #sickbayStart {
     grid-area: section;
@@ -202,6 +203,8 @@ h3~h3 {
     margin-top: 20px;
 }
 
+/* INFO SECTION */
+
 #platformContainer {
     margin-top: 75px;
 }
@@ -220,6 +223,46 @@ h3~h3 {
     width: auto;
     margin-right: 20px;
 }
+
+/* BAR CHART SECTION*/
+#barChartSection {
+    grid-area: barChart;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#barChart {
+    border: 1px solid white;
+}
+
+rect {
+    fill: #069CC0;
+}
+
+text {
+    color: white;
+    font-size: 1.4em;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.axis-label {
+    font-size: 2.3em;
+}
+
+.title {
+    font-size: 1.75em;
+}
+
+/* .domain {
+    stroke: white;
+} */
+
+.tick line {
+    stroke: #C0C0BB;
+}
+
+/* FOOTER */
 
 footer {
     grid-area: footer;

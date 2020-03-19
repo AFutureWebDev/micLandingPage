@@ -1,0 +1,17 @@
+Characteristic,Patients
+Age: <40,58
+Age: 40-64,89
+Age: >=65,33
+Male,89
+Female,91
+Gastrointestinal,38
+Cardiovascular,31
+Neurological,22
+Genitourinary,16
+Musculoskeletal,14
+Integumentary,12
+Respiratory,10
+ENT,8
+Trauma,8
+Eyes,2
+Other,0

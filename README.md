@@ -1,0 +1,1 @@
+This bar chart shows the characteristics of 180 Patient-Physician Encounters. The data comes from the year 2019 and from the [ResearchGate](https://www.researchgate.net/figure/Characteristics-of-180-Patient-Physician-Encounters_tbl1_335897114).
