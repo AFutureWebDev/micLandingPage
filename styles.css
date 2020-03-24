@@ -243,7 +243,7 @@ rect {
 text {
     color: white;
     font-size: 1.4em;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .axis-label {
@@ -266,4 +266,48 @@ text {
 
 footer {
     grid-area: footer;
+    margin-top: 50px;
+}
+
+footer img {
+    margin: 0px 50px;
+}
+
+footer p {
+    color: white;
+    margin: 0px 50px;
+}
+
+#fb {
+    fill: white;
+}
+
+#linkedin {
+    fill: white;
+}
+
+#twitter {
+    fill: white;
+}
+
+#foot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+}
+
+#links-container{
+    width: 15em;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+
+#bit-container h1 {
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 1em;
+    color: #069CC0;
+    font-family: 'Montserrat', sans-serif;
 }
